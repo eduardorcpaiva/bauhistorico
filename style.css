@@ -1,0 +1,32 @@
+:root {
+  --fundo: #f6f1e7;
+  --texto: #2b2118;
+  --suave: #6b5a48;
+  --destaque: #8a5a1f;
+  --linha: #e0d5c2;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fundo: #1b1611;
+    --texto: #efe6d6;
+    --suave: #b9a88f;
+    --destaque: #d9a45b;
+    --linha: #3a3026;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--fundo);
+  color: var(--texto);
+  font: 17px/1.6 Georgia, "Times New Roman", serif;
+}
+main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
+header { display: flex; align-items: center; gap: 16px; margin-bottom: 32px; }
+header img { width: 72px; height: 72px; border-radius: 50%; }
+h1 { font-size: 1.7rem; margin: 0; line-height: 1.2; }
+h2 { font-size: 1.15rem; margin: 2em 0 0.5em; }
+p.sub { margin: 4px 0 0; color: var(--suave); }
+a { color: var(--destaque); }
+nav { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--linha); color: var(--suave); font-size: 0.95rem; }
+.en { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--linha); color: var(--suave); font-size: 0.95rem; }
